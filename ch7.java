@@ -21,10 +21,10 @@ public class ch7
 
     public static int indexOfMax( int[] b)
     {
-        int n=b[0];
+        int n=0;
         for(int i=1;i<b.length;i++)
         {
-            if(b[i]<n) n=b[i];
+            if(b[i]>n) n=i;
         }
 
         return n;
